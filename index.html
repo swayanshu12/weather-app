@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-sans box-border flex items-center justify-center h-screen bg-gray-900">
+    <div id="back" class="w-3/4 h-3/4 bg-gradient-to-br from-sky-800 to-purple-400 rounded-2xl flex justify-center items-start flex-wrap min-w-2xs bg-cover">
+        <div class="flex w-full justify-center items-center">
+            <div class=" flex justify-center gap-2 inset-shadow-2xs shadow-lg/20  p-2 rounded-2xl m-6  max-w-xs flex-1">
+                <input id="searchbox" type="text" placeholder="Enter city name" spellcheck="false" class="bg-amber-50 rounded-2xl pl-2 flex flex-1 min-w-0 " >
+                <button id="btn" type="submit" class="bg-white w-8 h-8 flex items-center justify-center rounded-3xl"><img src="images/images.png" class="w-6 h-6 rounded-3xl hover:cursor-pointer"></button>
+            </div>
+        </div>
+        <div class="flex items-center justify-center flex-wrap min-w-0 m-6 rounded-2xl inset-shadow-2xs shadow-lg/30 size-auto">
+            <div class="flex  justify-center w-full">
+                <p id="city" class="text-xl text-amber-50 pt-4 ">City</p>
+            </div>
+            <div class="flex justify-center p-5 pb-2 w-full">
+                <img id="image" src="images/cloudy_icon.png" alt="image " class="size-auto  max-w-20">
+            </div>
+            <div class="flex w-full items-center justify-center pb-5">
+                <div id="weather" class="text-3xl font-bold text-amber-50">NaN</div>
+            </div>
+            <div class="flex min-w-0 mb-5 mx-2 w-full gap-1 text-lg max-a:text-sm">
+                <div class="bg-white/10 text-amber-50 justify-center flex-1/3 rounded-md flex flex-wrap inset-shadow-2xs shadow-lg/30 w-full py-1.5 ">
+                    <div class="text-xs  w-full flex justify-center items-center  ">Humidity</div>
+                    <div id="humidity" class=" ">NaN</div>    
+                </div>    
+                <div class=" bg-white/10  text-amber-50 flex-1/3 flex flex-wrap justify-center rounded-md inset-shadow-2xs shadow-lg/30 py-1.5" >
+                    <div class="text-xs  w-full flex justify-center items-center ">Temp</div>
+                    <div id="temp" class="justify-center items-center">NaN</div>
+                </div>
+                <div class=" bg-white/10  text-amber-50 flex-1/3 flex flex-wrap justify-center rounded-md inset-shadow-2xs shadow-lg/30 py-1.5">
+                    <div class="text-xs w-full flex justify-center items-center">Wind</div>
+                    <div id="wind" class=" justify-center items-center ">NaN</div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <script src="project1.js"></script>
+</body>
+</html>
